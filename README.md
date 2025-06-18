@@ -1,5 +1,9 @@
 # 🌐 Skill Swap App
 
+![Android Studio](https://img.shields.io/badge/Built%20With-Android%20Studio-3DDC84?logo=android-studio&logoColor=white)
+![Java](https://img.shields.io/badge/Language-Java-blue)
+
+
 The **Skill Swap App** is a mobile application designed to connect individuals who want to learn and teach different skills. From coding and painting to yoga and photography, this app makes it easy to swap skills with people around you.
 
 ---
