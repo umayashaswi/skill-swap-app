@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="16dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+                <!-- Full Name -->
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Full Name"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"/>
+
+                <!-- Bio -->
+                <EditText
+                    android:id="@+id/etBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Bio"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"/>
+
+                <!-- Skill Offered -->
+                <EditText
+                    android:id="@+id/etSkillOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Skill Offered"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"/>
+
+                <!-- Years of Experience -->
+                <EditText
+                    android:id="@+id/etYearsExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:inputType="number"
+                    android:hint="Years of Experience"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"/>
+
+                <!-- Skill Level Spinner -->
+                <Spinner
+                    android:id="@+id/spSkillLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Experience Description -->
+                <EditText
+                    android:id="@+id/etExpDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Experience Description"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:scrollbars="vertical"/>
+
+                <!-- Portfolio URL -->
+                <EditText
+                    android:id="@+id/etPortfolio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Portfolio URL"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"
+                    android:inputType="textUri"/>
+
+                <!-- Skill Wanted -->
+                <EditText
+                    android:id="@+id/etSkillWant"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Skill Wanted"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"/>
+
+                <!-- Why Learn -->
+                <EditText
+                    android:id="@+id/etWhyLearn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Why Learn"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"/>
+
+                <!-- Communication Mode Spinner -->
+                <Spinner
+                    android:id="@+id/spCommMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Number of Sessions -->
+                <EditText
+                    android:id="@+id/etNumSessions"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:inputType="number"
+                    android:hint="Number of Sessions"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"/>
+
+                <!-- Duration Spinner -->
+                <Spinner
+                    android:id="@+id/spDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- DatePicker and TimePicker Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
+
+                    <DatePicker
+                        android:id="@+id/dpDate"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TimePicker
+                        android:id="@+id/tpTime"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner" />
+                </LinearLayout>
+
+                <!-- Other Communication Mode -->
+                <EditText
+                    android:id="@+id/etCommOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Other Communication Mode"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"/>
+
+                <!-- Expected Level Spinner -->
+                <Spinner
+                    android:id="@+id/spExpectedLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Additional Message -->
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Additional Message"
+                    android:padding="14dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textSize="16sp"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:scrollbars="vertical"/>
+
+                <!-- Guidelines Checkbox -->
+                <CheckBox
+                    android:id="@+id/chkGuidelines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="I accept the guidelines"
+                    android:textSize="16sp" />
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Submit"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:cornerRadius="16dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

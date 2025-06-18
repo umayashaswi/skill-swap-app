@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- For API 32 and below -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- For API 33 and above -->
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        tools:targetApi="33" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Skill_swap"
+        tools:targetApi="31">
+
+        <!-- Activities -->
+        <activity android:name=".ChatConnectionsActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false"/>
+        <activity android:name=".ui.NewPostActivity" android:exported="false" />
+        <activity android:name=".ui.CommentsActivity" android:exported="false" />
+        <activity android:name=".IncomingRequestsActivity" android:exported="false" />
+        <activity android:name=".UsersListActivity" android:exported="false" />
+        <activity android:name=".SearchSkillsActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".BaseActivity" android:exported="false" />
+        <activity android:name=".InvitesActivity" android:exported="false" />
+        <activity android:name=".SentRequestsActivity" android:exported="false" />
+        <activity android:name=".EditProfileActivity" android:exported="false" />
+        <activity android:name=".RegistrationActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".ConnectionStatusActivity" android:exported="false" />
+        <activity android:name=".ui.FeedActivity" android:exported="false" />
+        <activity android:name=".InboxActivity" android:exported="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Launcher -->
+        <activity android:name=".LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

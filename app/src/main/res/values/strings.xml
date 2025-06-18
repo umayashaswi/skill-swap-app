@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">skill_swap</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>\
+    <string name="welcome_text">Welcome!</string>
+    <string name="profile_image_desc">Profile picture</string>
+    <string-array name="category_array">
+        <item>Student</item>
+        <item>Professional</item>
+        <item>Freelancer</item>
+        <item>Other</item>
+    </string-array>
+    <string name="welcome_message">Welcome, %1$s!</string>
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+    <string name="skills_fmt">Skills: %1$s</string>
+    <string name="add_post">Create new post</string>
+
+    <string name="like">Like this post</string>
+    <string name="comment">Comment on this post</string>
+    <string name="profile_picture">Profile picture</string>
+
+    <string name="author_name">Author Name</string>
+    <string name="time_ago">2h ago</string>
+    <string name="read_more">Read more</string>
+    <string name="resolved">Resolved</string>
+    <string name="post_content">This is the post content that could be long and should be expandable.</string>
+
+        <string-array name="skill_levels">
+            <item>Beginner</item>
+            <item>Intermediate</item>
+            <item>Expert</item>
+        </string-array>
+
+        <string-array name="session_durations">
+            <item>30 mins</item>
+            <item>1 hour</item>
+            <item>2 hours</item>
+        </string-array>
+
+        <string-array name="comm_modes">
+            <item>Video Call</item>
+            <item>Chat</item>
+            <item>In-person</item>
+            <item>Other</item>
+        </string-array>
+
+    <dimen name="invite_field_margin_bottom">8dp</dimen>
+    <style name="InviteField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+
+</resources>

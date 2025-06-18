@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="16dp"
+    android:backgroundTint="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Top row: profile picture + author/time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp">
+
+            <!-- Profile picture -->
+            <ImageView
+                android:id="@+id/ic_default_avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_placeholder"
+                android:contentDescription="@string/profile_picture"
+                android:background="@drawable/circle_bg"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+            <!-- Author + timestamp -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author Name"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#222222"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2h ago"
+                    android:textSize="13sp"
+                    android:textColor="#888888"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Post content -->
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="This is the post content that could be long and should be expandable."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- Read More / Read Less toggle -->
+        <TextView
+            android:id="@+id/tvToggleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read more"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Chips (e.g., tags) -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:singleLine="true"
+            app:chipSpacing="8dp" />
+
+        <!-- Like, comment, resolved -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/like"
+                android:src="@drawable/ic_like_outline"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:layout_marginEnd="10dp"
+                android:tint="@color/purple" />
+
+            <TextView
+                android:id="@+id/tvLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="14sp"
+                android:textColor="@color/purple"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <ImageButton
+                android:id="@+id/btnComment"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/comment"
+                android:src="@drawable/ic_comment"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:layout_marginEnd="10dp"
+                android:tint="@color/purple" />
+
+            <TextView
+                android:id="@+id/tvCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="14sp"
+                android:textColor="@color/purple"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tvResolved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resolved"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

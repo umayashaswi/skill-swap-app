@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvFullName" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvStatus" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvPreferredDate" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvPreferredTime" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvReason" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvSkillOffered" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvSkillWanted" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvSkillLevel" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvYearsExp" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvExperienceDescription" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvPortfolioLink" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvWhyLearn" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvCommunicationMode" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvNumberOfSessions" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvSessionDuration" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvExpectedProficiency" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvOtherCommunication" style="@style/InviteField"/>
+        <TextView android:id="@+id/tvMessage" style="@style/InviteField"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewCommenterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commenter Name"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a comment text."
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27 May 2025, 11:41 PM"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_purple_button"
+            android:textColor="@android:color/white"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:minHeight="48dp"
+            android:layout_gravity="start" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReplies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:layout_marginTop="16dp"
+            android:nestedScrollingEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/layoutReplyInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/editTextReply"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Write a reply..."
+                android:padding="16dp"
+                android:background="@drawable/custom_edittext"
+                android:textSize="14sp"
+                android:inputType="textMultiLine" />
+
+            <ImageButton
+                android:id="@+id/buttonSendReply"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/purple"
+                android:padding="12dp"
+                android:src="@android:drawable/ic_menu_send"
+                android:contentDescription="Send Reply"
+                app:tint="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

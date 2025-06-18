@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Card container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+                <!-- Title (ID preserved) -->
+                <TextView
+                    android:id="@+id/registerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp"/>
+
+                <!-- Full Name -->
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Confirm Password -->
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Skills Offered -->
+                <EditText
+                    android:id="@+id/skillsOfferedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Skills you offer (comma separated)"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Skills Wanted -->
+                <EditText
+                    android:id="@+id/skillsWantedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Skills you want to learn (comma separated)"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Location -->
+                <EditText
+                    android:id="@+id/locationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Location (optional)"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Phone -->
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Register Button (ID preserved) -->
+                <Button
+                    android:id="@+id/registerButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Register"
+                    android:layout_marginTop="28dp"
+                    android:backgroundTint="@color/purple"
+                    app:cornerRadius="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Already have an account? Login -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/goToLoginContainer"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/alreadyAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textSize="14sp"
+                android:textColor="@color/purple" />
+
+            <TextView
+                android:id="@+id/loginLinkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Login"
+                android:textSize="14sp"
+                android:textColor="@color/purple" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Card container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+                <!-- Profile Image -->
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_profile_placeholder"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="16dp"
+                    android:padding="4dp"
+                    android:contentDescription="@string/profile_image_desc" />
+
+                <!-- Change Picture Button -->
+                <Button
+                    android:id="@+id/btnPickAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Avatar"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="16dp"
+                    android:layout_marginBottom="24dp"/>
+                <!-- Name -->
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Name"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"
+                    android:inputType="textPersonName"/>
+
+                <!-- Phone -->
+                <EditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Phone"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"
+                    android:inputType="phone"/>
+
+                <!-- Skills -->
+                <EditText
+                    android:id="@+id/editSkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Skills (e.g., Java, React)"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Area -->
+                <EditText
+                    android:id="@+id/editArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Area (e.g., Hyderabad)"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Interests -->
+                <EditText
+                    android:id="@+id/editInterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Interests (e.g., Drawing, AI)"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+
+                <EditText
+                    android:id="@+id/YearsofExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="(e.g., 0,1,2,3,4,5,6,7,8,9,10)"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"/>
+
+                <!-- Country Spinner -->
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_edittext" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Save"
+                    android:layout_marginTop="28dp"
+                    android:backgroundTint="@color/purple"
+                    app:cornerRadius="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

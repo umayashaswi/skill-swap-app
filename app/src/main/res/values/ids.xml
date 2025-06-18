@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- key used to cache username so we do only one Firestore read per user -->
+    <item name="tag_username_cache" type="id"/>
+</resources>
