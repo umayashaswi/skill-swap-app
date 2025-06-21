@@ -7,6 +7,11 @@
 The **Skill Swap App** is a mobile application designed to connect individuals who want to learn and teach different skills. From coding and painting to yoga and photography, this app makes it easy to swap skills with people around you.
 
 ---
+## 📽️ Project Presentation
+
+[View Presentation on Google Slides]([https://docs.google.com/presentation/d/your-id/view](https://docs.google.com/presentation/d/1Z7eevHmDfwBIVUEG9EKtTK23AF3IBfks/edit?usp=sharing&ouid=113464719653218970031&rtpof=true&sd=true)
+
+---
 
 ## ✨ Features
 
